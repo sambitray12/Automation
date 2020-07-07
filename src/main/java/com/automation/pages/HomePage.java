@@ -29,5 +29,11 @@ public class HomePage extends BasePage
 		Signin.click();
 		return loginpage;
 	}
+	
+	public LoginPage ClickLogo()
+	{
+		Logo.click();
+		return loginpage;
+	}
 
 }

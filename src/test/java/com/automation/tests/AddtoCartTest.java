@@ -1,24 +1,24 @@
 package com.automation.tests;
 
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.automation.base.BasePage;
+import com.automation.pages.AddtocartPage;
 import com.automation.pages.LoginPage;
 import com.automation.util.TestUtil;
 
-public class LoginTest extends BasePage
+public class AddtoCartTest extends BasePage
 {
 	
 	LoginPage loginpage;
+	AddtocartPage addtocartPage;
 	TestUtil testutil;
 	String sheetname = "credentials";
 	
-	public LoginTest()
+	public AddtoCartTest()
 	{
 		super();
 	}
@@ -28,7 +28,7 @@ public class LoginTest extends BasePage
 	{
 		
 		initilization();
-		loginpage = new LoginPage();
+		addtocartPage = new AddtocartPage();
 	
 	}
 	
@@ -42,10 +42,10 @@ public class LoginTest extends BasePage
 	 
 	
 	@Test(priority=1,dataProvider = "getTestData")
-	public void LoginVerification(String email,String password)
+	public void AddToCartVerification(String email,String password)
 	{
 		
-		loginpage.loginTest(email,password);
+		addtocartPage.AddtoCartFunctionality(email,password,prop.getProperty("addtocart_success_msg"));
 	}
 	
 	
@@ -55,5 +55,6 @@ public class LoginTest extends BasePage
 	{
 		driver.quit();
 	}
+
 
 }

@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Selenium Automation Test]" parallel="methods">
+  <listeners>
+    <listener class-name="com.automation.ExtentReportListner.ExtentReportListner"/>
+  </listeners>
   <test thread-count="5" name="WebTest(failed)" parallel="methods">
     <classes>
+      <class name="com.automation.tests.AddtoCartTest">
+        <methods>
+          <include name="AddToCartVerification" invocation-numbers="0"/>
+          <include name="Terminate"/>
+          <include name="Initiate"/>
+        </methods>
+      </class> <!-- com.automation.tests.AddtoCartTest -->
       <class name="com.automation.tests.LoginTest">
         <methods>
           <include name="Initiate"/>
           <include name="Terminate"/>
-          <include name="LoginVerification"/>
+          <include name="LoginVerification" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.automation.tests.LoginTest -->
     </classes>

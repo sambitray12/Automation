@@ -7,9 +7,12 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -21,6 +24,7 @@ public class BasePage
 
 	public static WebDriver driver;
 	public static Properties prop;
+	
 	
 	public BasePage() 
 	{
@@ -66,6 +70,28 @@ public class BasePage
 		WebDriverWait wait = new WebDriverWait(driver,TestUtil.PAGE_LOAD_TIMEOUT);
 
 		element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(Xpath)));
+		
+	}
+	
+	public static void scrolldown()
+	{
+		
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		jse.executeScript("window.scrollBy(0,550)");
+	}
+	
+	public static void scrollup()
+	{
+		
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		jse.executeScript("window.scrollBy(0,-250)");
+	}
+	
+	public static void mousehover(WebElement element)
+	{
+		 Actions action = new Actions(driver);
+		 action.moveToElement(element).build().perform();
+		
 		
 	}
 	

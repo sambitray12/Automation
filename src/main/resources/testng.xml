@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Selenium Automation Test" parallel="methods"
-	verbose="1" thread-count="5">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Selenium Automation Test">
 
 
 	<listeners>
@@ -9,8 +9,9 @@
 	
 	<test name="WebTest">
 		<classes>
-			<class name="com.automation.tests.LoginTest"> 
-            </class>
+			<class name="com.automation.tests.LoginTest"> </class>
+			<class name="com.automation.tests.AddtoCartTest"> </class>
+            
 		</classes>
 	</test>	
 </suite> 
