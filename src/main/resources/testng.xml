@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Selenium Automation Test" parallel="methods"
+	verbose="1" thread-count="5">
+
+
+	<listeners>
+		<listener class-name="com.automation.ExtentReportListner.ExtentReportListner" />
+	</listeners>
+	
+	<test name="WebTest">
+		<classes>
+			<class name="com.automation.tests.LoginTest"> 
+            </class>
+		</classes>
+	</test>	
+</suite> 
