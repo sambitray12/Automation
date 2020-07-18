@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Selenium Automation Test" duration-ms="53186" started-at="2020-07-07T21:27:23 IST" finished-at="2020-07-07T21:28:17 IST">
+  <suite name="Selenium Automation Test" duration-ms="35657" started-at="2020-07-18T10:29:07 IST" finished-at="2020-07-18T10:29:42 IST">
     <groups>
     </groups>
-    <test name="WebTest" duration-ms="53186" started-at="2020-07-07T21:27:23 IST" finished-at="2020-07-07T21:28:17 IST">
+    <test name="WebTest" duration-ms="35657" started-at="2020-07-18T10:29:07 IST" finished-at="2020-07-18T10:29:42 IST">
       <class name="com.automation.tests.AddtoCartTest">
-        <test-method status="PASS" signature="Initiate()[pri:0, instance:com.automation.tests.AddtoCartTest@53f65459]" name="Initiate" is-config="true" duration-ms="16783" started-at="2020-07-07T21:27:48 IST" finished-at="2020-07-07T21:28:04 IST">
+        <test-method status="PASS" signature="Initiate()[pri:0, instance:com.automation.tests.AddtoCartTest@1e965684]" name="Initiate" is-config="true" duration-ms="14428" started-at="2020-07-18T10:29:07 IST" finished-at="2020-07-18T10:29:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Initiate -->
-        <test-method status="PASS" signature="AddToCartVerification(java.lang.String, java.lang.String)[pri:1, instance:com.automation.tests.AddtoCartTest@53f65459]" name="AddToCartVerification" duration-ms="11905" started-at="2020-07-07T21:28:04 IST" data-provider="getTestData" finished-at="2020-07-07T21:28:16 IST">
+        <test-method status="PASS" signature="AddToCartVerification(java.lang.String, java.lang.String)[pri:1, instance:com.automation.tests.AddtoCartTest@1e965684]" name="AddToCartVerification" duration-ms="19968" started-at="2020-07-18T10:29:22 IST" data-provider="getTestData" finished-at="2020-07-18T10:29:42 IST">
           <params>
             <param index="0">
               <value>
@@ -27,37 +27,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddToCartVerification -->
-        <test-method status="PASS" signature="Terminate()[pri:0, instance:com.automation.tests.AddtoCartTest@53f65459]" name="Terminate" is-config="true" duration-ms="177" started-at="2020-07-07T21:28:16 IST" finished-at="2020-07-07T21:28:17 IST">
+        <test-method status="PASS" signature="Terminate()[pri:0, instance:com.automation.tests.AddtoCartTest@1e965684]" name="Terminate" is-config="true" duration-ms="183" started-at="2020-07-18T10:29:42 IST" finished-at="2020-07-18T10:29:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Terminate -->
       </class> <!-- com.automation.tests.AddtoCartTest -->
-      <class name="com.automation.tests.LoginTest">
-        <test-method status="PASS" signature="Initiate()[pri:0, instance:com.automation.tests.LoginTest@4d95d2a2]" name="Initiate" is-config="true" duration-ms="16648" started-at="2020-07-07T21:27:23 IST" finished-at="2020-07-07T21:27:40 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Initiate -->
-        <test-method status="PASS" signature="LoginVerification(java.lang.String, java.lang.String)[pri:1, instance:com.automation.tests.LoginTest@4d95d2a2]" name="LoginVerification" duration-ms="6024" started-at="2020-07-07T21:27:41 IST" data-provider="getTestData" finished-at="2020-07-07T21:27:47 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[util@yahoo.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[test@1234]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginVerification -->
-        <test-method status="PASS" signature="Terminate()[pri:0, instance:com.automation.tests.LoginTest@4d95d2a2]" name="Terminate" is-config="true" duration-ms="199" started-at="2020-07-07T21:27:47 IST" finished-at="2020-07-07T21:27:48 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Terminate -->
-      </class> <!-- com.automation.tests.LoginTest -->
     </test> <!-- WebTest -->
   </suite> <!-- Selenium Automation Test -->
 </testng-results>

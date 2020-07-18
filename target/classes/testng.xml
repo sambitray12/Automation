@@ -9,7 +9,7 @@
 	
 	<test name="WebTest">
 		<classes>
-			<class name="com.automation.tests.LoginTest"> </class>
+			
 			<class name="com.automation.tests.AddtoCartTest"> </class>
             
 		</classes>

@@ -10,7 +10,7 @@ import com.automation.base.BasePage;
 
 public class AddtocartPage extends BasePage
 {
-	LoginPage loginpage;
+	RegisterPage RegisterPage;
 	HomePage homepage;
 
 	@FindBy(xpath = "//a[normalize-space()='Sign in']")
@@ -38,7 +38,7 @@ public class AddtocartPage extends BasePage
 	
 	public void AddtoCartFunctionality(String username,String password,String msg)
 	{
-		new LoginPage().loginfuctionality(username, password);
+		new RegisterPage().registerfuctionality();
 		new HomePage().ClickLogo();
 		scrolldown();
 		mousehover(product);

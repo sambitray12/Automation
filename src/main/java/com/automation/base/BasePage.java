@@ -3,6 +3,8 @@ package com.automation.base;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -14,6 +16,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.automation.util.TestUtil;
@@ -92,7 +95,26 @@ public class BasePage
 		 Actions action = new Actions(driver);
 		 action.moveToElement(element).build().perform();
 		
+	}
+	
+	public static String randomEmail(){
+		
+		String timeStamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
+		
+		String emailprefix = "automation";
+		String emailDomain = "@mailsac.com";
+		String email = emailprefix + timeStamp + emailDomain;
+		System.out.println(email);
+		return email;
+	}
+	
+public static void selectDropdown(WebElement element,String value)
+{
+		Select sel = new Select(element);
+		sel.selectByValue(value);
 		
 	}
+	
+	
 	
 }
